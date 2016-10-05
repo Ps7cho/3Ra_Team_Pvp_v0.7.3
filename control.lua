@@ -311,12 +311,13 @@ function starting_inventory(event)
 	player.insert{name="stone-furnace", count = 10}
 end
 
+	-- distance between bases
 script.on_init(function()
-	global.purple_team_x = math.random(320,340)
+	global.purple_team_x = math.random(370,380)
 	global.purple_team_y = math.random(0,0)
 	global.purple_team_position ={ global.purple_team_x, global.purple_team_y}
 	global.purple_team_area = {{ global.purple_team_x - d,  global.purple_team_y - d},{ global.purple_team_x + d,  global.purple_team_y + d}}
-	global.orange_team_x = 0 - math.random(320,340)
+	global.orange_team_x = 0 - math.random(370,380)
 	global.orange_team_y = 0 - math.random(0,0)
 	global.orange_team_position = { global.orange_team_x, global.orange_team_y}
 	global.orange_team_area = {{ global.orange_team_x - d,  global.orange_team_y - d},{ global.orange_team_x + d,  global.orange_team_y + d}}
